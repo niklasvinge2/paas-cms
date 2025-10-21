@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: niklasvinge2/paas-nu-main
+  branch: main
+
+media_folder: "public/images/case-studies"
+public_folder: "/images/case-studies"
+
+collections:
+  - name: "case-studies"
+    label: "Case Studies"
+    folder: "content/case-studies"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Client Name", name: "client", widget: "string"}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Industry", name: "industry", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
+      - {label: "Content", name: "body", widget: "markdown"}
