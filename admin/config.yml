@@ -6,6 +6,11 @@ backend:
 media_folder: "public/images/case-studies"
 public_folder: "/images/case-studies"
 
+media_library:
+  name: uploadcare
+  config:
+    publicKey: demopublickey
+
 collections:
   - name: "case-studies"
     label: "Case Studies"
